@@ -19,11 +19,10 @@ if __name__ == "__main__":
 @app.route("/submit", methods=['POST'])
 def submit():
     form_data = {
-        'name': request.form.get('name'),
-        'age': request.form.get('age'),
-        'hobby': request.form.get('hobby'),
-        'color': request.form.get('favorite_color'),
-        'lukcy': request.form.get('lucky_number')
+        'Cuisine': request.form.get('cuisine'),
+        'Do you want to cook or order?': request.form.get('cook'),
+        'Just you or big group?': request.form.get('alone'),
+        'Dessert?': request.form.get('dessert')
     }
 
     return render_template("results.html", form_data=form_data)
