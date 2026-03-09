@@ -10,6 +10,7 @@
     <div class="'page-content"> 
     <h1>What should you eat????</h1>
 
+<form action="/submit" method="POST">
     <!-- Dropdown Menu -->
       <label for="cuisine">Pick your Cuisine:</label>
       <select id="cuisine" name="cuisine" required>
@@ -19,9 +20,34 @@
           <option value="Italian">Italian</option>
           <option value="Japanese">Japanese</option>
           <option value="Spanish">Spanish</option>
-          <option value="MiddleEastern">MiddleEastern</option>
+          <option value="MiddleEastern">Middle Eastern</option>
 
       </select><br><br> 
+      
+      <label for="cook">Do you want to cook or order?</label>
+      <select id="cook" name="cook" required>
+          <option value="Cook">Cook</option>
+          <option value="Order in">Order in</option>
+
+        </select><br><br> 
+
+      <label for="alone">Just you or multiple people?</label>
+      <select id="alone" name="alone" required>
+          <option value="Just me">Just me</option>
+          <option value="Multiple people">Multiple people</option>
+
+        </select><br><br> 
+
+      <label for="dessert">Do you want dessert?</label>
+      <select id="dessert" name="dessert" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+
+        </select><br><br> 
+
+     <!-- Submit Button -->
+      <button type="submit">Submit</button>
+</form>
 
     </div>
 
